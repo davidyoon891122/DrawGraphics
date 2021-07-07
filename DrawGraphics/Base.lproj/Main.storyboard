@@ -23,7 +23,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQG-ff-kDJ">
-                                                <rect key="frame" x="0.0" y="0.0" width="71.666666666666671" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="59.666666666666664" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="m45-zl-b6G"/>
                                                 </constraints>
@@ -33,7 +33,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfp-Zb-5wH">
-                                                <rect key="frame" x="71.666666666666657" y="0.0" width="71.666666666666657" height="40"/>
+                                                <rect key="frame" x="59.666666666666671" y="0.0" width="59.666666666666671" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Vd5-2K-g40"/>
                                                 </constraints>
@@ -43,7 +43,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqK-ul-tSc">
-                                                <rect key="frame" x="143.33333333333334" y="0.0" width="71.333333333333343" height="40"/>
+                                                <rect key="frame" x="119.33333333333336" y="0.0" width="59.666666666666671" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ARG-z5-ArS"/>
                                                 </constraints>
@@ -53,7 +53,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vml-cF-gjV">
-                                                <rect key="frame" x="214.66666666666666" y="0.0" width="71.666666666666657" height="40"/>
+                                                <rect key="frame" x="179" y="0.0" width="59.666666666666657" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Bmx-IF-DYa"/>
                                                 </constraints>
@@ -63,13 +63,20 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiU-m1-Hx0">
-                                                <rect key="frame" x="286.33333333333331" y="0.0" width="71.666666666666686" height="40"/>
+                                                <rect key="frame" x="238.66666666666666" y="0.0" width="59.666666666666657" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="0UK-6L-v9I"/>
                                                 </constraints>
                                                 <state key="normal" title="채우기"/>
                                                 <connections>
                                                     <action selector="btnDrawFill:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXO-Dj-Szp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRd-zO-9Jr">
+                                                <rect key="frame" x="298.33333333333331" y="0.0" width="59.666666666666686" height="40"/>
+                                                <state key="normal" title="flower"/>
+                                                <connections>
+                                                    <action selector="btnDrawFlower:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ywo-0H-wch"/>
                                                 </connections>
                                             </button>
                                         </subviews>

@@ -151,5 +151,60 @@ class ViewController: UIViewController {
         UIGraphicsEndImageContext()
     }
     
+    @IBAction func btnDrawFlower(_ sender: UIButton) {
+        UIGraphicsBeginImageContext(imageView.frame.size)
+        let context = UIGraphicsGetCurrentContext()!
+        
+        // draw triangle
+        context.setLineWidth(4.0)
+        context.setStrokeColor(UIColor.blue.cgColor)
+        context.setFillColor(UIColor.blue.cgColor)
+        
+        context.move(to: CGPoint(x: 140, y: 450))
+        context.addLine(to: CGPoint(x: 170, y: 200))
+        context.addLine(to: CGPoint(x: 200, y: 450))
+        context.addLine(to: CGPoint(x: 140, y: 450))
+        context.strokePath()
+        
+        // draw circle
+        context.setLineWidth(1.0)
+        context.setStrokeColor(UIColor.purple.cgColor)
+        
+        let circle = CGRect(x: 120, y: 150, width: 100, height: 100)
+        context.addEllipse(in: circle)
+        context.strokePath()
+        
+        context.setLineWidth(1.0)
+        context.setStrokeColor(UIColor.purple.cgColor)
+        
+        let circle_2 = CGRect(x: 120+50, y: 150, width: 100, height: 100)
+        context.addEllipse(in: circle_2)
+        context.strokePath()
+        
+        context.setLineWidth(1.0)
+        context.setStrokeColor(UIColor.purple.cgColor)
+        
+        let circle_3 = CGRect(x: 120-50, y: 150, width: 100, height: 100)
+        context.addEllipse(in: circle_3)
+        context.strokePath()
+        
+        context.setLineWidth(1.0)
+        context.setStrokeColor(UIColor.purple.cgColor)
+        
+        let circle_4 = CGRect(x: 120, y: 150+50, width: 100, height: 100)
+        context.addEllipse(in: circle_4)
+        
+        context.strokePath()
+        context.setLineWidth(1.0)
+        context.setStrokeColor(UIColor.purple.cgColor)
+        
+        let circle_5 = CGRect(x: 120, y: 150-50, width: 100, height: 100)
+        context.addEllipse(in: circle_5)
+        context.strokePath()
+        
+        
+        imageView.image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+    }
 }
 
